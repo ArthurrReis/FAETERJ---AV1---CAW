@@ -6,29 +6,106 @@
     box-sizing: 0px;
 }
 header{
-    padding: 20px;
-    background-color: yellow;
-    
+    padding-top: 20px;
+    background-color: burlywood;
+    background-image: url(imagens/fundo.png);
+    height: 561px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 menu{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    /* margin-top: 365px; */
+    background-color: burlywood;
+    padding: 8px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.288);
 }
-header a{
-    
+menu a{
     text-decoration: none;
     margin-right: 10px;
-    
-}
-#destaque{
-    
     color: black;
 }
+menu a:hover{
+    color: red;
+    transform: translate(-3px, -3px);
+    transition: all .5s;
+}
+#destaque{
+    color: black;
+}
+#destaque:hover{
+    color: red;
+    transform: translate(-3px, -3px);
+    transition: all .5s;
+}
+
 main{
-    padding: 30px;
     margin-bottom: 10px;
 }
 main h1, h2, a, p{
     padding: 10px;
+}
+header img{
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+#principal{
+    margin-top: 30px;
+    height: 200px;
+    background-color: #F5EADA;
+    padding: 20px;
+    & h1{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    & h2{
+        text-align: center;
+        font-size: 1rem;
+    }
+    & a{
+        text-decoration: none;
+       background-color: rgb(170, 67, 49);
+       color: white;
+       border-radius: 5px;
+    }
+}
+#centralizar{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#pratos{
+    background-color: #F9F1E9;
+    text-align: center;
+    height: 700px;
+    & h1{
+        text-align: center;
+    }
+    & img{
+        width: 275px;
+        height: 183px;
+    }
+    & a{
+        text-decoration: none;
+         background-color: rgb(170, 67, 49);
+       color: white;
+       border-radius: 5px;
+       transform: translateY(-10px);
+    }
+}
+#p1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    
+}
+#p2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
 }
