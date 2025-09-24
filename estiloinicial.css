@@ -5,6 +5,13 @@
     padding: 0px;
     box-sizing: 0px;
 }
+h1, h2{
+    /* font-family: "Josefin Sans", sans-serif; */
+    font-family: "Arvo", serif;
+}
+p, a{
+    font-family: "Nunito Sans", sans-serif;
+}
 header{
     padding-top: 20px;
     background-color: burlywood;
@@ -54,7 +61,7 @@ header img{
     margin: auto;
 }
 #principal{
-    margin-top: 30px;
+    
     height: 200px;
     background-color: #F5EADA;
     padding: 20px;
@@ -108,4 +115,78 @@ header img{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 20px;
+}
+#completo{
+    display: block;
+    transform: translateY(50px);
+}
+#depoimentos{
+    background-color: #F5EADA;
+    padding: 10px;
+    & h1{
+        text-align: center;
+    }
+    & p{
+        text-align: justify;
+        width: 95vw;
+    }
+}
+#endereço{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F9F1E9;
+    padding: 10px;
+}
+#diminuir{
+    width: 300px;
+    & a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+            color: blue;
+        }
+    }
+}
+#galeria{
+    & h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    & img{
+        width: 20vw;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+}
+.fotos{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer{
+    background-color: #695643;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & img{
+         width: 100px;
+    border-radius: 50%;
+    }
+    & h1, p{
+        font-size: .9rem;
+        color: white;
+    }
+    & a{
+        text-decoration: none;
+        &:hover{
+            color: blue;
+        }
+    }
+}
+iframe{
+    display: block;
+    margin: auto;
+}
+#mapa{
+    background-color: #F5EADA;
 }
